@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:recipe_app/model/recipes';
 
 void main() {
   runApp(const ReceipeApp());
@@ -18,7 +19,7 @@ class ReceipeApp extends StatelessWidget {
           backgroundColor: Colors.white,
         ),
       ),
-      home: const MyHomePage(title: 'Recipe Calculater'),
+      home: const MyHomePage(title: 'Recipe Calculator'),
     );
   }
 }
@@ -41,16 +42,16 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Container(
           child: ListView.builder(
             itemBuilder: (BuildContext context, int index) {
-              return buildRecipeCard(Receipe.samples[index]); //Reuseฟังก์ชั่น
+              return buildRecipeCard(Recipe.samples[index]); //Reuseฟังก์ชั่น
             },
-            itemCount: Receipe.samples.length,
+            itemCount: Recipe.samples.length,
           ),
         ),
       ),
     );
   }
 
-  Widget buildRecipeCard(Receipe recipe) {
+  Widget buildRecipeCard(Recipe recipe) {
     //ฟังก์ชั่นดีไซต์
     return Card(
       child: Column(
