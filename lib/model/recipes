@@ -2,25 +2,14 @@ class Recipe{
   String imgLable ;
   String imageUrl ;
 
-  Recipe(this.imageUrl, this.imgLable)
+  // Constructor
+  Recipe(this.imageUrl, this.imgLable);
 
-  static List<Recipe> samples = 
+  static List<Recipe> samples =
   [
-  Recipe(
-    'assets/images/Larb muang.webp',
-    'Larb muang (Thai chopped pork salad)', // แก้ให้ตรงกับรูป
-  ),
-  Recipe(
-    'assets/images/Pad Thai.webp',
-    'Pad Thai', // แก้ให้ตรงกับรูป
-  ),
-  Recipe(
-    'assets/images/Thai pumpkin curry.webp', // สลับบรรทัดนี้ขึ้นมา
-    'Thai pumpkin curry (gaeng fak thong)',
-  ),
-  Recipe(
-    'assets/images/Thai green fish curry.webp',
-    'Thai green fish curry',
-  ),
-];
+    Recipe('assets/images/Larb muang.webp', 'Pad Thai'),
+    Recipe('assets/images/Pad Thai.webp', 'Thai pumpkin curry (gaeng fak thong)'),
+    Recipe('assets/images/Thai green fish curry.webp', 'Thai green fish curry'),
+    Recipe('assets/images/Thai pumpkin curry.webp', 'Larb muang (Thai chopped pork salad)')
+  ];
 }
