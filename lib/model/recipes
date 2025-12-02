@@ -1,0 +1,15 @@
+class recipes {
+  String imgLable;
+  String imageUrl;
+
+  // Constructor
+  Receipe(this.imageUrl, this.imgLable);
+
+  static List<Receipe> samples =
+  [
+    Receipe('assets/images/Larb muang.webp', 'Pad Thai'),
+    Receipe('assets/images/Pad Thai.webp', 'Thai pumpkin curry (gaeng fak thong)'),
+    Receipe('assets/images/Thai green fish curry.webp', 'Thai green fish curry'),
+    Receipe('assets/images/Thai pumpkin curry.webp', 'Larb muang (Thai chopped pork salad)')
+  ];
+}
