@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:recipe_app/model/recipes';
 
 void main() {
   runApp(const ReceipeApp());
